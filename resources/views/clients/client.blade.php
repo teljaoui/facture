@@ -15,11 +15,11 @@
 
     <div class="wrapper">
         <aside id="sidebar">
-            @include("assets.asidebar")
+            @include("layout.asidebar")
         </aside>
         <div class="main">
             <header>
-                @include("assets.header")
+                @include("layout.header")
             </header>
             <div class="container  my-5">
                 <div class="client-top d-flex align-items-center justify-content-between">
