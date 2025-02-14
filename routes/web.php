@@ -1,5 +1,6 @@
 <?php
 
+use App\Http\Controllers\FactShowController;
 use Illuminate\Support\Facades\Route;
 
 /*
@@ -13,12 +14,9 @@ use Illuminate\Support\Facades\Route;
 |
 */
 
-Route::get('/', function () {
-    return view('home');
-});
+Route::get('/', [FactShowController::class , 'home']);
 
 Route::prefix('/clients')->group(function(){
-    Route::get('/' , function(){
-        return view('clients.client');
-    })->name("clients");
+    Route::get('/' , [FactShowController::class , 'allclient'])->name("clients");
+    Route::get('/ajouter' , [FactShowController::class , 'addclient'])->name("ajouterclient");
 });

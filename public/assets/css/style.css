@@ -5,9 +5,11 @@
     --color-fff: #fff;
     --color-eff3f7: #eff3f7;
     --color-6c757d: #6c757d;
+    --color-adb5bd : #adb5bd;
     --color-e0e3ff: #e0e3ff;
     --color-border: #e9ecef;
     --color-212529: #212529;
+    --color-343a40: #343a40;
     --color-6571ff: #6571ff;
     --color-0ac074: #0ac074;
     --color-f62947: #f62947;
@@ -45,6 +47,20 @@ a {
     background-color: #4e5cfd;
 }
 
+.reset{
+    font-weight: 400;
+    text-align: center;
+    align-items: center;
+    padding: .563rem 1.563rem;
+    border-radius: 0.313rem;
+    border: none;
+    background-color: var(--color-adb5bd);
+    color: var(--color-212529);
+    transition: 0.3s ease-in-out;
+}
+.reset:hover{
+    background-color: var(--color-6c757d);
+}
 #sidebar {
     width: 265px;
     height: 100vh;
@@ -258,7 +274,7 @@ header .header {
     background-color: var(--color-eff3f7);
 }
 
-.main .container{
+.main .container {
     width: 95%;
     margin-inline: auto;
 }
@@ -273,59 +289,69 @@ header .header {
     padding: 1px 12px;
 }
 
-.main .search-form input{
+.main .search-form input {
     background-color: none !important;
     border: none !important;
     padding: 5px 12px;
 }
-.main .search-form input:focus{
-    outline:none;
-    box-shadow: none !important; 
+
+.main .search-form input:focus {
+    outline: none;
+    box-shadow: none !important;
 }
 
-.main .search-form i{
+.main .search-form i {
     font-size: 15px;
     color: var(--color-6c757d);
 }
 
-.main .content{
+.main .content {
     background-color: var(--color-fff);
     margin-block: 50px;
     border-radius: 5px;
     margin-inline: auto;
 }
-.main .content .badge{
+
+.main .content .badge {
     background-color: var(--color-0ac074);
     border-radius: 50%;
     font-size: 10px;
 }
-.main .content .info a{
+
+.main .content .info a {
     color: var(--color-6571ff);
     font-size: 14px;
     text-transform: capitalize;
 }
-.main .content .info span{
+
+.main .content .info span {
     color: var(--color-6c757d);
     font-size: 14px;
 }
-.main .content a.btn-action{
+
+.main .content a.btn-action {
     font-size: 15px;
     margin-inline: 5px;
 }
-.main .content .edite{
+
+.main .content .edite {
     color: var(--color-6571ff) !important;
 }
-.table{
+
+.table {
     background-color: var(--color-fff);
 }
+
 .table thead {
     background-color: #f8f9fa;
 }
-.table thead th{
+
+.table thead th {
     color: var(--color-6c757d);
     font-size: 12px;
     font-weight: 500;
 }
+
 .avatar {
     width: 40px;
     height: 40px;
@@ -334,5 +360,23 @@ header .header {
 }
 
 
-/*content ends */
+.main .content .form-group  label {
+    margin-bottom: 8px;
+    font-size: 1rem;
+    color: var(--color-212529);
+}
 
+.main .content .form-control{
+    display: block;
+    width: 100%;
+    padding: .5rem .8rem;
+    font-size: .79rem;
+    color: var(--color-6c757d);
+    transition: 0.5s ease-in-out;
+}
+.main .content .form-control:focus{
+    border: 1px solid var(--color-6c757d);
+    box-shadow: none;
+    outline: none;
+}
+/*content ends */
