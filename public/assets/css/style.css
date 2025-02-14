@@ -6,7 +6,7 @@
     --color-eff3f7: #eff3f7;
     --color-6c757d: #6c757d;
     --color-e0e3ff: #e0e3ff;
-    --color-border:#e9ecef;
+    --color-border: #e9ecef;
     --color-212529: #212529;
     --color-6571ff: #6571ff;
     --color-0ac074: #0ac074;
@@ -19,38 +19,30 @@
     box-sizing: border-box;
     font-size: 97%;
 }
-body{
-    font-family:  "Atkinson Hyperlegible Next", serif;;
+
+body {
+    font-family: "Atkinson Hyperlegible Next", serif;
+    ;
 }
+
 a {
     text-decoration: none !important;
 }
-.button{
+
+.button {
     font-weight: 400;
     text-align: center;
     align-items: center;
     padding: .563rem 1.563rem;
-    border-radius : 0.313rem;
-    border : none;
+    border-radius: 0.313rem;
+    border: none;
     background-color: var(--color-6571ff);
     color: var(--color-fff);
     transition: 0.3s ease-in-out;
 }
 
-.button:hover{
+.button:hover {
     background-color: #4e5cfd;
-}
-.wrapper {
-    display: flex;
-    background-color: var();
-}
-
-.main {
-    min-height: 100vh;
-    width: 100%;
-    overflow: hidden;
-    transition: all 0.35s ease-in-out;
-    background-color: var(--color-eff3f7);
 }
 
 #sidebar {
@@ -83,7 +75,7 @@ a {
     color: var(--color-6c757d);
 }
 
-a.sidebar-logo  {
+a.sidebar-logo {
     color: var(--color-212529);
     font-size: 1.1rem;
     font-weight: 600;
@@ -100,7 +92,7 @@ a.sidebar-logo  {
 }
 
 
-.sidebar-header img{
+.sidebar-header img {
     width: 50px;
     height: 50px;
 }
@@ -178,7 +170,7 @@ a.sidebar-link:hover {
 }
 
 /*header*/
-header .header{
+header .header {
     display: flex;
     justify-content: space-between;
     align-items: center;
@@ -187,7 +179,7 @@ header .header{
     background-color: var(--color-fff);
 }
 
-.header .page-title h5{
+.header .page-title h5 {
     font-size: 1.2rem;
     font-weight: 400;
     position: relative;
@@ -205,19 +197,20 @@ header .header{
     margin: auto;
 }
 
-.admin-compte{
+.admin-compte {
     background-color: transparent;
-    border : none;
+    border: none;
     display: flex;
     align-items: center;
     margin-left: 20px;
 }
-.admin-compte svg{
+
+.admin-compte svg {
     width: 38px;
     transition: 0.5s ease-in-out;
 }
 
-.admin-compte svg:hover{
+.admin-compte svg:hover {
     color: var(--color-6571ff);
 }
 
@@ -232,18 +225,114 @@ header .header{
     opacity: 1;
 }
 
-.dropdown-item{
+.dropdown-item {
     display: flex;
     align-items: center;
 }
-.dropdown-item i{
+
+.dropdown-item i {
     color: var(--color-6c757d);
     margin-right: 10px;
     font-size: 1.1rem;
 }
-.dropdown-item span{
+
+.dropdown-item span {
     color: var(--color-212529);
     font-size: 1.1rem;
 }
 
 /*header ends*/
+
+
+/*content*/
+.wrapper {
+    display: flex;
+    background-color: var();
+}
+
+.main {
+    min-height: 100vh;
+    width: 100%;
+    overflow: hidden;
+    transition: all 0.35s ease-in-out;
+    background-color: var(--color-eff3f7);
+}
+
+.main .container{
+    width: 95%;
+    margin-inline: auto;
+}
+
+
+.main .search-form {
+    display: flex;
+    align-items: center;
+    background-color: var(--color-fff);
+    border-radius: 7px;
+    border: 0.5px solid var(--color-6c757d);
+    padding: 1px 12px;
+}
+
+.main .search-form input{
+    background-color: none !important;
+    border: none !important;
+    padding: 5px 12px;
+}
+.main .search-form input:focus{
+    outline:none;
+    box-shadow: none !important; 
+}
+
+.main .search-form i{
+    font-size: 15px;
+    color: var(--color-6c757d);
+}
+
+.main .content{
+    background-color: var(--color-fff);
+    margin-block: 50px;
+    border-radius: 5px;
+    margin-inline: auto;
+}
+.main .content .badge{
+    background-color: var(--color-0ac074);
+    border-radius: 50%;
+    font-size: 10px;
+}
+.main .content .info a{
+    color: var(--color-6571ff);
+    font-size: 14px;
+    text-transform: capitalize;
+}
+.main .content .info span{
+    color: var(--color-6c757d);
+    font-size: 14px;
+}
+.main .content a.btn-action{
+    font-size: 15px;
+    margin-inline: 5px;
+}
+.main .content .edite{
+    color: var(--color-6571ff) !important;
+}
+.table{
+    background-color: var(--color-fff);
+}
+.table thead {
+    background-color: #f8f9fa;
+}
+.table thead th{
+    color: var(--color-6c757d);
+    font-size: 12px;
+    font-weight: 500;
+}
+.avatar {
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    object-fit: cover;
+}
+
+
+/*content ends */
+
