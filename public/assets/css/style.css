@@ -312,7 +312,7 @@ header .header {
     margin-inline: auto;
 }
 
-.main .content .badge {
+.main .content span.badge {
     background-color: var(--color-0ac074);
     border-radius: 50%;
     font-size: 10px;
@@ -324,7 +324,7 @@ header .header {
     text-transform: capitalize;
 }
 
-.main .content .info span {
+.main .content  span {
     color: var(--color-6c757d);
     font-size: 14px;
 }
@@ -360,6 +360,11 @@ header .header {
 }
 
 
+.main .content h5{
+    font-size: 20px;
+    text-transform: uppercase;
+    color: var(--color-6c757d);
+}
 .main .content .form-group  label {
     margin-bottom: 8px;
     font-size: 1rem;

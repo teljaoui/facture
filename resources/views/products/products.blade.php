@@ -10,7 +10,7 @@
         integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css">
     <link href="https://cdn.lineicons.com/4.0/lineicons.css" rel="stylesheet" />
-    <title>Tableau de bord</title>
+    <title>Produits</title>
 </head>
 
 <body>
@@ -31,15 +31,16 @@
                             <input type="text" class="form-control" placeholder="Rechercher">
                         </div>
                     </form>
-                    <a href="{{route("ajouterclient")}}" class="button">Ajouter un Client</a>
+                    <a href="{{route("ajouterproduit")}}" class="button">Ajouter un produit</a>
                 </div>
                 <div class="content">
                     <div class="table-responsive py-1 px-3">
                         <table class="table align-middle ">
                             <thead>
                                 <tr>
-                                    <th>CLIENT</th>
-                                    <th class="text-center">FACTURE D'ACHAT</th>
+                                    <th>Nom du produit</th>
+                                    <th class="text-center">Code Produit</th>
+                                    <th class="text-center">Prix</th>
                                     <th class="text-center">ACTION</th>
                                 </tr>
                             </thead>
@@ -47,15 +48,16 @@
                                 <tr>
                                     <td>
                                         <div class="d-flex align-items-center info">
-                                            <img src="assets/img/avatar.png" alt="Avatar" class="avatar me-3">
+                                            <img src="{{ asset('assets/img/produit.webp') }}" alt="Avatar" class="avatar me-3">
                                             <div>
-                                                <a href="#">Mohamed Sadis</a><br>
-                                                <span>mohamedsadis@gmail.com</span>
+                                                <a href="#">Lorem ipsum dolor sit amet.</a><br>
                                             </div>
                                         </div>
                                     </td>
                                     <td class="text-center">
-                                        <span class="badge">0</span>
+                                        <span>fo2584</span></td>
+                                    <td class="text-center">
+                                        <span>25.00</span>
                                     </td>
                                     <td class="text-center">
                                         <a href="" class="btn-action edite"><i class="fas fa-edit"></i></a>

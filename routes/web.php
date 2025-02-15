@@ -19,4 +19,11 @@ Route::get('/', [FactShowController::class , 'home']);
 Route::prefix('/clients')->group(function(){
     Route::get('/' , [FactShowController::class , 'allclient'])->name("clients");
     Route::get('/ajouter' , [FactShowController::class , 'addclient'])->name("ajouterclient");
+    Route::get('/update' , [FactShowController::class , 'updateClient'])->name('modifiéclient');
+});
+
+Route::prefix('/produits')->group(function(){
+    Route::get('/' , [FactShowController::class , 'allproducts'])->name("produits");
+    Route::get('/ajouter' , [FactShowController::class , 'addproduct'])->name("ajouterproduit");
+    Route::get('/update' , [FactShowController::class , 'updateproduct'])->name("modifiéproduit");;
 });

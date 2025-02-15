@@ -20,13 +20,13 @@
         </a>
     </li>
     <li class="sidebar-item">
-        <a href="#" class="sidebar-link">
+        <a href="{{route("produits")}}" class="sidebar-link">
             <i class="fa fa-cube" aria-hidden="true"></i>
             <span>Produits</span>
         </a>
     </li>
     <li class="sidebar-item">
-        <a href="#" class="sidebar-link">
+        <a href="" class="sidebar-link">
             <i class="fa-solid fa-quote-left"></i>
             <span>Devis</span>
         </a>

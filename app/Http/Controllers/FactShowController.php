@@ -6,13 +6,34 @@ use Illuminate\Http\Request;
 
 class FactShowController extends Controller
 {
-    public function home(){
+    public function home()
+    {
         return view('home');
     }
-    public function allclient(){
-        return view('clients.client');
+    public function allclient()
+    {
+        return view('clients.clients');
     }
-    public function addclient(){
+    public function addclient()
+    {
         return view("clients.add");
+    }
+    public function updateClient()
+    {
+        return view('clients.update');
+    }
+
+
+    public function allproducts()
+    {
+        return view('products.products');
+    }
+    public function addproduct()
+    {
+        return view('products.add');
+    }
+    public function updateproduct()
+    {
+        return view('products.update');
     }
 }

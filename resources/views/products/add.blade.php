@@ -26,40 +26,29 @@
             <div class="container my-5">
                 <div class="content">
                     <form action="" class="py-3 px-3">
-                        <h5 class="text-center">Ajouter un client</h5>
+                        <h5 class="text-center">Ajouter un produit</h5>
                         <div class="row">
+                            <div class="form-group col-lg-6 col-sm-12 col-md-12 mb-3">
+                                <label for="" class="form-label">Nom du produit:</label>
+                                <input type="text" class="form-control" placeholder="Nom de produit" required>
+                            </div>
+                            <div class="form-group col-lg-6 col-sm-12 col-md-12 mb-3">
+                                <label for="" class="form-label">Code Produit:</label>
+                                <input type="text" class="form-control" placeholder="Code Produit" required>
+                            </div>
+                            <div class="form-group col-lg-6 col-sm-12 col-md-12 mb-3">
+                                <label for="" class="form-label">Prix unitaire:</label>
+                                <input type="text" class="form-control" placeholder="Prix unitaire" required>
+                            </div>
+                            <div class="form-group col-lg-6 col-sm-12 col-md-12 mb-3">
+                                <label for="" class="form-label">Image:</label>
+                                <input type="file" name="" class="form-control" id="">
+                            </div>
                             <div class="form-group col-lg-12 col-sm-12 col-md-12 mb-3">
-                                <label for="" class="form-label">Nom Complet:</label>
-                                <input type="text" class="form-control" placeholder="Nom Complet" required>
+                                <label for="" class="form-label">Description:</label>
+                                <textarea name=""  class="form-control" id="" placeholder="Description"></textarea>
                             </div>
-                            <div class="form-group col-lg-6 col-sm-12 col-md-12 mb-3">
-                                <label for="" class="form-label">E-mail:</label>
-                                <input type="email" class="form-control" placeholder="E-mail" required>
-                            </div>
-                            <div class="form-group col-lg-6 col-sm-12 col-md-12 mb-3">
-                                <label for="" class="form-label">Numéro de contact:</label>
-                                <input type="number" class="form-control" placeholder="+212 6000000000" required>
-                            </div>
-                            <div class="form-group col-lg-6 col-sm-12 col-md-12 mb-3">
-                                <label for="" class="form-label">Site:</label>
-                                <input type="text" class="form-control" placeholder="Site" required>
-                            </div>
-                            <div class="form-group col-lg-6 col-sm-12 col-md-12 mb-3">
-                                <label for="" class="form-label">Code Postal:</label>
-                                <input type="text" class="form-control" placeholder="Code Postal" required>
-                            </div>
-                            <div class="form-group col-lg-6 col-sm-12 col-md-12 mb-3">
-                                <label for="" class="form-label">Adresse:</label>
-                                <textarea name=""  class="form-control" id="" placeholder="Adresse"></textarea>
-                            </div>
-                            <div class="form-group col-lg-6 col-sm-12 col-md-12 mb-3">
-                                <label for="" class="form-label">Notes:</label>
-                                <textarea name=""  class="form-control" id="" placeholder="Notes"></textarea>
-                            </div>
-                            <div class="form-group col-lg-6 col-sm-12 col-md-12 mb-3">
-                                <label for="" class="form-label">Nom de l'entreprise:</label>
-                                <textarea name=""  class="form-control" id="" placeholder="Nom de l'entreprise"></textarea>
-                            </div>
+                          
                             <div class="col-12 text-end">
                                 <input type="submit" value="Enregister" class="button">
                                 <input type="reset" value="Annuler" class="reset">

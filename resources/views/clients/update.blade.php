@@ -26,7 +26,7 @@
             <div class="container my-5">
                 <div class="content">
                     <form action="" class="py-3 px-3">
-                        <h5 class="text-center">Ajouter un client</h5>
+                        <h5 class="text-center">modifier le client</h5>
                         <div class="row">
                             <div class="form-group col-lg-12 col-sm-12 col-md-12 mb-3">
                                 <label for="" class="form-label">Nom Complet:</label>
@@ -34,11 +34,11 @@
                             </div>
                             <div class="form-group col-lg-6 col-sm-12 col-md-12 mb-3">
                                 <label for="" class="form-label">E-mail:</label>
-                                <input type="email" class="form-control" placeholder="E-mail" required>
+                                <input type="text" class="form-control" placeholder="E-mail" required>
                             </div>
                             <div class="form-group col-lg-6 col-sm-12 col-md-12 mb-3">
                                 <label for="" class="form-label">Numéro de contact:</label>
-                                <input type="number" class="form-control" placeholder="+212 6000000000" required>
+                                <input type="text" class="form-control" placeholder="+212 6000000000" required>
                             </div>
                             <div class="form-group col-lg-6 col-sm-12 col-md-12 mb-3">
                                 <label for="" class="form-label">Site:</label>
@@ -62,8 +62,6 @@
                             </div>
                             <div class="col-12 text-end">
                                 <input type="submit" value="Enregister" class="button">
-                                <input type="reset" value="Annuler" class="reset">
-
                             </div>
                         </div>
                     </form>
