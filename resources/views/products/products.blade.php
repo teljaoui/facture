@@ -50,7 +50,7 @@
                                         <div class="d-flex align-items-center info">
                                             <img src="{{ asset('assets/img/produit.webp') }}" alt="Avatar" class="avatar me-3">
                                             <div>
-                                                <a href="#">Lorem ipsum dolor sit amet.</a><br>
+                                                <a href="{{route('detailproduit')}}">Lorem ipsum dolor sit amet.</a><br>
                                             </div>
                                         </div>
                                     </td>

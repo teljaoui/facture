@@ -23,6 +23,9 @@ class FactShowController extends Controller
         return view('clients.update');
     }
 
+    public function detailclient(){
+        return view('clients.info');
+    }
 
     public function allproducts()
     {
@@ -35,5 +38,8 @@ class FactShowController extends Controller
     public function updateproduct()
     {
         return view('products.update');
+    }
+    public function detailproduit(){
+        return view('products.info');
     }
 }
