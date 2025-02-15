@@ -14,8 +14,11 @@
     --color-0ac074: #0ac074;
     --color-f62947: #f62947;
     --color-fdd4da: #fdd4da;
-    --color-0099fb:#0099fb;
-    --color-ccebfe:#ccebfe;
+    --color-0099fb: #0099fb;
+    --color-ccebfe: #ccebfe;
+    --color-cef2e3: #cef2e3;
+    --color-ffb821: #ffb821;
+    --color-fff1d3: #fff1d3;
 }
 
 * {
@@ -373,7 +376,21 @@ header .header {
     color: var(--color-f62947);
     padding: .344rem .625rem;
     font-size: .75rem;
-    border-radius: 10px;
+    border-radius: 5px;
+}
+.main .content span.badge-success{
+    background-color: var(--color-cef2e3);
+    color: var(--color-0ac074);
+    padding: .344rem .625rem;
+    font-size: .75rem;
+    border-radius: 5px;   
+}
+.main .content span.badge-warning{
+    background-color: var(--color-fff1d3);
+    color: var(--color-ffb821);
+    padding: .344rem .625rem;
+    font-size: .75rem;
+    border-radius: 5px;
 }
 .main .content span.badge-info {
     background-color: var(--color-ccebfe);
@@ -465,7 +482,8 @@ header .header {
 }
 
 .table .drop-table{
-    background-color: transparent;
+    background-color: var(--color-fff);
+    padding: 10px;
     border: none;
 }
 .table .dropdown {

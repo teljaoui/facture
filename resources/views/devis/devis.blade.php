@@ -88,7 +88,44 @@
                                         <span>22.00</span>
                                     </td>
                                     <td class="text-center">
-                                        <span>Converted</span>
+                                        <span class="badge-success">Converted</span>
+                                    </td>
+                                    <td class="text-center">
+                                        <div class="dropdown">
+                                            <button class="drop-table dropdown-toggle" type="button" data-bs-toggle="dropdown"  aria-expanded="false">
+                                                <i class="fa-solid fa-ellipsis-vertical"></i>
+                                            </button>
+                                            <ul class="dropdown-menu my-2">
+                                                <li><a class="dropdown-item" href="#"><span>Convertire en facture</span></a></li>
+                                                <li><a class="dropdown-item" href="#"><span>Edit</span></a></li>
+                                                <li><a class="dropdown-item" href="#"><span>Supprimer</span></a></li>
+                                            </ul>
+                                        </div>
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td>
+                                        <div class="d-flex align-items-center info">
+                                            <img src="{{ asset('assets/img/avatar.png') }}" alt="Avatar" class="avatar me-3">
+                                            <div>
+                                                <a href="{{route('detailclient')}}">Mohamed Sadis</a>
+                                                <a href=""><span class="badge-info mx-2">#de874</span></a>
+                                                <br>
+                                                <span>mohamedsadis@gmail.com</span>
+                                            </div>
+                                        </div>
+                                    </td>
+                                    <td class="text-center">
+                                        <span>2025.02.06</span>
+                                    </td>
+                                    <td class="text-center">
+                                        <span>2025.02.06</span>
+                                    </td>
+                                    <td class="text-center">
+                                        <span>22.00</span>
+                                    </td>
+                                    <td class="text-center">
+                                        <span class="badge-warning">Converted</span>
                                     </td>
                                     <td class="text-center">
                                         <div class="dropdown">
