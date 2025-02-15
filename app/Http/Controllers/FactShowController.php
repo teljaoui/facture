@@ -42,4 +42,18 @@ class FactShowController extends Controller
     public function detailproduit(){
         return view('products.info');
     }
+
+    public function alldevis(){
+        return view('devis.devis');
+    }
+    public function adddevis(){
+        return view('devis.add');
+    }
+    public function updatedevis(){
+        return view('devis.update');
+    }
+    public function detaildevis(){
+        return view('devis.info');
+    }
+
 }

@@ -29,3 +29,10 @@ Route::prefix('/produits')->group(function(){
     Route::get('/update' , [FactShowController::class , 'updateproduct'])->name("modifiéproduit");
     Route::get('/detail' , [FactShowController::class , 'detailproduit'])->name('detailproduit');
 });
+
+Route::prefix('/devis')->group(function(){
+    Route::get('/' , [FactShowController::class , 'alldevis'])->name('alldevis');
+    Route::get('/ajouter' , [FactShowController::class , 'adddevis'])->name("ajouteradddevis");
+    Route::get('/update' , [FactShowController::class , 'updatedevis'])->name("modifiéadddevis");
+    Route::get('/detail' , [FactShowController::class , 'detaildevis'])->name('detailadddevis');
+});

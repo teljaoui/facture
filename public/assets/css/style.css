@@ -13,7 +13,9 @@
     --color-6571ff: #6571ff;
     --color-0ac074: #0ac074;
     --color-f62947: #f62947;
-    --color-fdd4da:#fdd4da;
+    --color-fdd4da: #fdd4da;
+    --color-0099fb:#0099fb;
+    --color-ccebfe:#ccebfe;
 }
 
 * {
@@ -81,6 +83,28 @@ a {
     color: var(--color-fff);
 }
 
+.export {
+    font-weight: 400;
+    text-align: center;
+    align-items: center;
+    padding: .563rem 1.563rem;
+    border-radius: 0.313rem;
+    border: none;
+    background-color: var(--color-0ac074);
+    color: var(--color-fff);
+    transition: 0.3s ease-in-out;
+}
+
+.export:hover {
+    opacity:0.8;
+}
+
+.gap-10{
+    gap: 10px;
+}
+.gap-15{
+    gap: 15px;
+}
 #sidebar {
     width: 265px;
     height: 100vh;
@@ -269,13 +293,18 @@ header .header {
 .dropdown-item i {
     color: var(--color-6c757d);
     margin-right: 10px;
-    font-size: 1.1rem;
+    font-size: 0.89rem;
 }
 
 .dropdown-item span {
     color: var(--color-212529);
-    font-size: 1.1rem;
+    font-size: 0.89rem;
 }
+.button.dropdown-toggle::after,
+.drop-table.dropdown-toggle::after {
+    display: none !important;
+}
+
 
 /*header ends*/
 
@@ -339,14 +368,22 @@ header .header {
     font-size: 10px;
 }
 
-.main .content span.badge-red{
+.main .content span.badge-red {
     background-color: var(--color-fdd4da);
     color: var(--color-f62947);
     padding: .344rem .625rem;
     font-size: .75rem;
     border-radius: 10px;
 }
-
+.main .content span.badge-info {
+    background-color: var(--color-ccebfe);
+    color: var(--color-0099fb);
+    padding: 2px 8px;
+    font-size: .81rem;
+    font-weight: 500;
+    text-transform: uppercase;
+    border-radius:5px;
+}
 .main .content .info a {
     color: var(--color-6571ff);
     font-size: 14px;
@@ -367,43 +404,51 @@ header .header {
     color: var(--color-6571ff) !important;
 }
 
-.main  .clientinfo{
+.main .clientinfo {
     padding: 35px;
 }
-.main .clientinfo img{
+
+.main .clientinfo img {
     width: 80px;
     height: 80px;
     margin-right: 30px;
 }
-.main .clientinfo h6{
+
+.main .clientinfo h6 {
     font-size: 16px;
 }
-.main .clientinfo a{
+
+.main .clientinfo a {
     font-size: 16px;
     color: var(--color-6c757d);
     font-weight: 550;
 }
-.main .clientinfo span , 
-.main .clientinfo p{
+
+.main .clientinfo span,
+.main .clientinfo p {
     font-size: 14px;
     font-weight: 500;
 }
-.main .header-client-content a{
+
+.main .header-client-content a {
     font-size: 15px;
     padding: 2px;
     color: var(--color-6c757d);
     margin-right: 25px;
     transition: 0.1s ease-in-out;
 }
-.main .header-client-content a.active ,
-.main .header-client-content a:hover{
+
+.main .header-client-content a.active,
+.main .header-client-content a:hover {
     border-bottom: 2px solid var(--color-6571ff);
     color: var(--color-6571ff);
 }
-.main .clientinfo p{
+
+.main .clientinfo p {
     margin-top: 10px !important;
     color: var(--color-343a40);
 }
+
 .table {
     background-color: var(--color-fff);
 }
@@ -419,6 +464,22 @@ header .header {
     font-weight: 500;
 }
 
+.table .drop-table{
+    background-color: transparent;
+    border: none;
+}
+.table .dropdown {
+    position: static;
+}
+.table .drop-table i{
+    font-size: 16px;
+    color: var(--color-6571ff);
+}
+
+.table .dropdown-menu{
+    z-index: 1050; 
+    position: absolute;
+}
 .avatar {
     width: 40px;
     height: 40px;
