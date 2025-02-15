@@ -315,6 +315,7 @@ header .header {
 .main .content span.badge {
     background-color: var(--color-0ac074);
     border-radius: 50%;
+    color: var(--color-fff);
     font-size: 10px;
 }
 
