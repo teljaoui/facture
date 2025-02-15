@@ -31,7 +31,7 @@ Route::prefix('/produits')->group(function(){
 });
 
 Route::prefix('/devis')->group(function(){
-    Route::get('/' , [FactShowController::class , 'alldevis'])->name('alldevis');
+    Route::get('/' , [FactShowController::class , 'alldevis'])->name('devis');
     Route::get('/ajouter' , [FactShowController::class , 'adddevis'])->name("ajouteradddevis");
     Route::get('/update' , [FactShowController::class , 'updatedevis'])->name("modifiéadddevis");
     Route::get('/detail' , [FactShowController::class , 'detaildevis'])->name('detailadddevis');

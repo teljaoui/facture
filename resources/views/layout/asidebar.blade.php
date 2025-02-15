@@ -26,7 +26,7 @@
         </a>
     </li>
     <li class="sidebar-item">
-        <a href="" class="sidebar-link">
+        <a href="{{route("devis")}}" class="sidebar-link">
             <i class="fa-solid fa-quote-left"></i>
             <span>Devis</span>
         </a>

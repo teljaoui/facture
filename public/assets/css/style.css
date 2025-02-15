@@ -466,13 +466,7 @@ header .header {
     color: var(--color-343a40);
 }
 
-.table {
-    background-color: var(--color-fff);
-}
 
-.table thead {
-    background-color: #f8f9fa;
-}
 
 .table thead th {
     color: var(--color-6c757d);
@@ -518,7 +512,8 @@ header .header {
     color: var(--color-212529);
 }
 
-.main .content .form-control {
+.main .content .form-control,
+.main .content .form-select{
     display: block;
     width: 100%;
     padding: .5rem .8rem;
@@ -527,7 +522,8 @@ header .header {
     transition: 0.5s ease-in-out;
 }
 
-.main .content .form-control:focus {
+.main .content .form-control:focus ,
+.main .content .form-select:focus{
     border: 1px solid var(--color-6c757d);
     box-shadow: none;
     outline: none;
