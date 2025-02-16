@@ -46,27 +46,59 @@
                                 <input type="date" name="" id="" class="form-control">
                             </div>
                             <div class="col-12 text-end">
-                                <button class="button">Ajouter</button>
+                                <button type="button" id="ajouterLigne" class="button">Ajouter</button>
                             </div>
                             <div class="table-responsive py-1 px-3">
                                 <table class="table align-middle ">
                                     <thead>
                                         <tr>
-                                            <th>#</th>
                                             <th>Produit</th>
-                                            <th class="text-center">QTY</th>
-                                            <th class="text-center">Prix unitaire</th>
+                                            <th>QTY</th>
+                                            <th>Prix unitaire</th>
                                             <th class="text-center">Montant</th>
-                                            <th class="text-center">action</th>
+                                            <th class="text-end">action</th>
                                         </tr>
                                     </thead>
+                                    <tbody>
+                                        <tr>
+                                            <td>
+                                                <select class="form-select">
+                                                    <option value="" selected disabled>Sélectionner un produit</option>
+                                                    <option value="1">Produit 1</option>
+                                                    <option value="2">Produit 2</option>
+                                                    <option value="3">Produit 3</option>
+                                                </select>
+                                            </td>
+                                            <td>
+                                                <input type="number" class="form-control qty" min="1" value="1">
+                                            </td>
+                                            <td>
+                                                <input type="number" class="form-control price" min="0" value="0">
+                                            </td>
+                                            <td class="text-center">
+                                                <span class="amount">0.00</span>
+                                            </td>
+                                            <td class="text-end">
+                                                <a href="javascript:void(0);" class="btn-action delete-row">
+                                                    <i class="fa-solid fa-trash text-danger"></i>
+                                                </a>
+                                            </td>
+                                        </tr>
+                                    </tbody>
+                                    
                                 </table>
                             </div>
-                                <div class="col-12 d-flex justify-content-end gap-15">
-                                    <input type="submit" value="Enregister" class="button">
-                                    <input type="reset" value="Annuler" class="reset">
+                            <div class="col-12 d-flex justify-content-end">
+                                <div class="devis-total border-top py-2 w-25 d-flex justify-content-between">
+                                    <span>Total:</span>
+                                    <p>0.00</p>
                                 </div>
                             </div>
+                            <div class="col-12 d-flex justify-content-end gap-15">
+                                <input type="submit" value="Enregister" class="button">
+                                <input type="reset" value="Annuler" class="reset">
+                            </div>
+                        </div>
                     </form>
                 </div>
             </div>

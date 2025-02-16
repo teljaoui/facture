@@ -528,5 +528,8 @@ header .header {
     box-shadow: none;
     outline: none;
 }
-
+.main .content .devis-total p{
+    font-weight: 600;
+    color: var(--color-212529);
+}
 /*content ends */
