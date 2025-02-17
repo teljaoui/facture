@@ -1,5 +1,8 @@
 <div class="d-flex header py-3">
-    <div class="page-title">
+    <div class="page-title d-flex align-items-center gap-15">
+        <button class="toggle-btn" id="toggle-btn-phone" type="button">
+            <i class="fa-solid fa-bars"></i>
+        </button>
         <h5>Client</h5>
     </div>
     <div class="header-right d-flex">

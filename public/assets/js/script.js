@@ -5,6 +5,17 @@ hamBurger.addEventListener("click", function () {
     document.querySelector("#sidebar").classList.toggle("expand");
 });
 
+const togglephone = document.querySelector("#toggle-btn-phone");
+
+togglephone.addEventListener("click" , function(){
+    document.querySelector("#sidebar").style.left=0;
+})
+
+const closetoggle = document.querySelector("#closetoggle");
+closetoggle.addEventListener("click" , function(){
+    document.querySelector("#sidebar").style.left= "-100%";
+})
+
 
 document.addEventListener("DOMContentLoaded", function () {
     const buttonAjouter = document.querySelector("#ajouterLigne");
