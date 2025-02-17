@@ -530,8 +530,8 @@ header .header {
     transition: 0.5s ease-in-out;
 }
 
-.main .content .form-control:focus ,
-.main .content .form-select:focus{
+.main .form-control:focus ,
+.main .form-select:focus{
     border: 1px solid var(--color-6c757d);
     box-shadow: none;
     outline: none;
