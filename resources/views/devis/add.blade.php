@@ -27,7 +27,7 @@
                 <div class="content">
                     <form action="" class="py-3 px-3">
                         <h5 class="text-center">Nouvelle cotation</h5>
-                        <div class="row">
+                        <div class="row mt-4">
                             <div class="form-group col-lg-4 col-sm-12 col-md-12 mb-3">
                                 <label for="" class="form-label">client:</label>
                                 <select name="" class="form-select" id="">
