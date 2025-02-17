@@ -56,4 +56,20 @@ class FactShowController extends Controller
         return view('devis.info');
     }
 
+    public function allfacture(){
+        return view('factures.factures');
+    }
+
+    public function addfacture(){
+        return view('factures.add');
+    }
+
+    public function updatefacture(){
+        return view('factures.update');
+    }
+
+    public function detailfacture(){
+        return view('factures.info');
+    }
+
 }

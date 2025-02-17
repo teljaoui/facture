@@ -49,7 +49,7 @@
                                 <li><a class="dropdown-item" href="#"><i class="fa-solid fa-file-pdf"></i><span>Exportation pdf</span></a></li>
                             </ul>
                         </div>
-                        <a href="{{route("ajouteradddevis")}}" class="button">Nouvelle cotation</a>
+                        <a href="{{route("ajouterdevis")}}" class="button">Nouvelle cotation</a>
                     </div>
                 </div>
                 <div class="content">

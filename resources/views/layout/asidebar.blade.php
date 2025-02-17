@@ -32,7 +32,7 @@
         </a>
     </li>
     <li class="sidebar-item">
-        <a href="#" class="sidebar-link">
+        <a href="{{route("factures")}}" class="sidebar-link">
             <i class="fa-solid fa-file-invoice"></i>
             <span>Factures</span>
         </a>

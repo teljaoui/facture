@@ -401,6 +401,14 @@ header .header {
     text-transform: uppercase;
     border-radius:5px;
 }
+.main .content span.badge-genie{
+    background-color: var(--color-e0e3ff);
+    color: var(--color-6571ff);
+    padding: 2px 8px;
+    font-size: .81rem;
+    font-weight: 500;
+    border-radius:5px;
+}
 .main .content .info a {
     color: var(--color-6571ff);
     font-size: 14px;
@@ -512,8 +520,8 @@ header .header {
     color: var(--color-212529);
 }
 
-.main .content .form-control,
-.main .content .form-select{
+.main  .form-control,
+.main  .form-select{
     display: block;
     width: 100%;
     padding: .5rem .8rem;

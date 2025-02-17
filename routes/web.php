@@ -32,7 +32,15 @@ Route::prefix('/produits')->group(function(){
 
 Route::prefix('/devis')->group(function(){
     Route::get('/' , [FactShowController::class , 'alldevis'])->name('devis');
-    Route::get('/ajouter' , [FactShowController::class , 'adddevis'])->name("ajouteradddevis");
-    Route::get('/update' , [FactShowController::class , 'updatedevis'])->name("modifiéadddevis");
-    Route::get('/detail' , [FactShowController::class , 'detaildevis'])->name('detailadddevis');
+    Route::get('/ajouter' , [FactShowController::class , 'adddevis'])->name("ajouterdevis");
+    Route::get('/update' , [FactShowController::class , 'updatedevis'])->name("modifiédevis");
+    Route::get('/detail' , [FactShowController::class , 'detaildevis'])->name('detaildevis');
+});
+
+
+Route::prefix('/factures')->group(function(){
+    Route::get('/' , [FactShowController::class , 'allfacture'])->name('factures');
+    Route::get('/ajouter' , [FactShowController::class , 'addfacture'])->name("ajouterfacture");
+    Route::get('/update' , [FactShowController::class , 'updatefacture'])->name("modifiéfacture");
+    Route::get('/detail' , [FactShowController::class , 'detailfacture'])->name('detailfacture');
 });
