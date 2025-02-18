@@ -33,7 +33,7 @@
                             </div>
                             <div class="form-group col-lg-12 col-sm-12 col-md-12 mb-3">
                                 <label for="" class="form-label">E-mail:</label>
-                                <input type="email" class="form-control" placeholder="E-mail" required>
+                                <input type="email" class="form-control" placeholder="E-mail"  required>
                             </div>
                             <div class="form-group col-lg-12 col-sm-12 col-md-12 mb-3">
                                 <label for="" class="form-label">Mot de passe actuel:</label>
