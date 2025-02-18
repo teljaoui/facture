@@ -3,10 +3,10 @@
         <button class="toggle-btn" id="toggle-btn-phone" type="button">
             <i class="fa-solid fa-bars"></i>
         </button>
-        <h5>Client</h5>
+        <h5>{{$page_title}}</h5>
     </div>
     <div class="header-right d-flex">
-        <a href="" class="button">Nouvelle Facture</a>
+        <a href="{{route("ajouterfacture")}}" class="button">Nouvelle Facture</a>
         <div class="dropdown">
             <button class="admin-compte dropdown-toggle" type="button" data-bs-toggle="dropdown" aria-expanded="false">
                 <svg class="w-6 h-6 text-gray-800 dark:text-white" aria-hidden="true" xmlns="http://www.w3.org/2000/svg"
@@ -17,8 +17,8 @@
                 </svg>
             </button>
             <ul class="dropdown-menu my-2">
-                <li><a class="dropdown-item" href="#"><i class="fa-solid fa-user"></i><span>Parametre de Compte</span></a></li>
-                <li><a class="dropdown-item" href="#"><i class="fa-solid fa-pen"></i><span>Change de mote de passe</span></a></li>
+                <li class="facture-button"><a class="dropdown-item" href="{{route("ajouterfacture")}}"><i class="fa-solid fa-file-pen"></i><span>Nouvelle Facture</span></a></li>
+                <li><a class="dropdown-item" href="{{route('compte')}}"><i class="fa-solid fa-user"></i><span>Parametre de Compte</span></a></li>
                 <li><a class="dropdown-item" href="#"><i class="fa-solid fa-right-from-bracket"></i><span>Se déconnecter</span></a></li>
             </ul>
         </div>

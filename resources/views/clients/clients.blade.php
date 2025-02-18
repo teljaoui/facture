@@ -49,8 +49,8 @@
                                         <div class="d-flex align-items-center info">
                                             <img src="{{ asset('assets/img/avatar.png') }}" alt="Avatar" class="avatar me-3">
                                             <div>
-                                                <a href="{{route('detailclient')}}">Mohamed Sadis</a><br>
-                                                <span>mohamedsadis@gmail.com</span>
+                                                <a href="{{route('detailclient')}}">Mohamed Test</a><br>
+                                                <span>mohamedtest@gmail.com</span>
                                             </div>
                                         </div>
                                     </td>

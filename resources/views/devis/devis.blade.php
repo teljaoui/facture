@@ -31,7 +31,7 @@
                             <input type="search" class="form-control" placeholder="Rechercher">
                         </div>
                     </form>
-                    <div class="d-flex gap-10">
+                    <div class="d-flex  gap-10">
                         <div class="dropdown">
                             <button class="button dropdown-toggle" style="padding: 5px 10px !important; font-size: 17px;" type="button" data-bs-toggle="dropdown" aria-expanded="false">
                                 <i class="fa-solid fa-filter"></i>
@@ -71,10 +71,10 @@
                                         <div class="d-flex align-items-center info">
                                             <img src="{{ asset('assets/img/avatar.png') }}" alt="Avatar" class="avatar me-3">
                                             <div>
-                                                <a href="{{route('detailclient')}}">Mohamed Sadis</a>
+                                                <a href="{{route('detailclient')}}">Mohamed Test</a>
                                                 <a href=""><span class="badge-info mx-2">#de874</span></a>
                                                 <br>
-                                                <span>mohamedsadis@gmail.com</span>
+                                                <span>mohamedtest@gmail.com</span>
                                             </div>
                                         </div>
                                     </td>
@@ -108,10 +108,10 @@
                                         <div class="d-flex align-items-center info">
                                             <img src="{{ asset('assets/img/avatar.png') }}" alt="Avatar" class="avatar me-3">
                                             <div>
-                                                <a href="{{route('detailclient')}}">Mohamed Sadis</a>
+                                                <a href="{{route('detailclient')}}">Mohamed Test</a>
                                                 <a href=""><span class="badge-info mx-2">#de874</span></a>
                                                 <br>
-                                                <span>mohamedsadis@gmail.com</span>
+                                                <span>mohamedtest@gmail.com</span>
                                             </div>
                                         </div>
                                     </td>

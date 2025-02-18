@@ -1,5 +1,6 @@
 <?php
 
+use App\Http\Controllers\AdminController;
 use App\Http\Controllers\FactShowController;
 use Illuminate\Support\Facades\Route;
 
@@ -14,7 +15,7 @@ use Illuminate\Support\Facades\Route;
 |
 */
 
-Route::get('/', [FactShowController::class , 'home']);
+Route::get('/', [FactShowController::class , 'home'])->name("home");
 
 Route::prefix('/clients')->group(function(){
     Route::get('/' , [FactShowController::class , 'allclient'])->name("clients");
@@ -43,4 +44,9 @@ Route::prefix('/factures')->group(function(){
     Route::get('/ajouter' , [FactShowController::class , 'addfacture'])->name("ajouterfacture");
     Route::get('/update' , [FactShowController::class , 'updatefacture'])->name("modifiéfacture");
     Route::get('/detail' , [FactShowController::class , 'detailfacture'])->name('detailfacture');
+});
+
+
+Route::prefix('/admin')->group( function(){
+    Route::get('/' , [AdminController::class , 'compte'])->name('compte');
 });

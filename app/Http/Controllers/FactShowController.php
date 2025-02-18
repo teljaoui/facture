@@ -8,68 +8,95 @@ class FactShowController extends Controller
 {
     public function home()
     {
-        return view('home');
+        $page_title = "Tableau de bord";
+        return view('home', compact("page_title"));
     }
     public function allclient()
     {
-        return view('clients.clients');
+        $page_title = "Clientes";
+        return view('clients.clients', compact("page_title"));
     }
     public function addclient()
     {
-        return view("clients.add");
+        $page_title = "Clientes";
+        return view("clients.add", compact("page_title"));
     }
     public function updateClient()
     {
-        return view('clients.update');
+        $page_title = "Clientes";
+        return view('clients.update', compact("page_title"));
     }
 
-    public function detailclient(){
-        return view('clients.info');
+    public function detailclient()
+    {
+        $page_title = "Clientes";
+        return view('clients.info', compact("page_title"));
     }
 
     public function allproducts()
     {
-        return view('products.products');
+        $page_title = "Produits";
+        return view('products.products', compact("page_title"));
     }
     public function addproduct()
     {
-        return view('products.add');
+        $page_title = "Produits";
+        return view('products.add', compact("page_title"));
     }
     public function updateproduct()
     {
-        return view('products.update');
+        $page_title = "Produits";
+        return view('products.update', compact("page_title"));
     }
-    public function detailproduit(){
-        return view('products.info');
-    }
-
-    public function alldevis(){
-        return view('devis.devis');
-    }
-    public function adddevis(){
-        return view('devis.add');
-    }
-    public function updatedevis(){
-        return view('devis.update');
-    }
-    public function detaildevis(){
-        return view('devis.info');
+    public function detailproduit()
+    {
+        $page_title = "Produits";
+        return view('products.info', compact("page_title"));
     }
 
-    public function allfacture(){
-        return view('factures.factures');
+    public function alldevis()
+    {
+        $page_title = "Devis";
+        return view('devis.devis', compact("page_title"));
+    }
+    public function adddevis()
+    {
+        $page_title = "Devis";
+        return view('devis.add', compact("page_title"));
+    }
+    public function updatedevis()
+    {
+        $page_title = "Devis";
+        return view('devis.update', compact("page_title"));
+    }
+    public function detaildevis()
+    {
+        $page_title = "Devis";
+        return view('devis.info', compact("page_title"));
     }
 
-    public function addfacture(){
-        return view('factures.add');
+    public function allfacture()
+    {
+        $page_title = "Factures";
+        return view('factures.factures', compact("page_title"));
     }
 
-    public function updatefacture(){
-        return view('factures.update');
+    public function addfacture()
+    {
+        $page_title = "Factures";
+        return view('factures.add', compact("page_title"));
     }
 
-    public function detailfacture(){
-        return view('factures.info');
+    public function updatefacture()
+    {
+        $page_title = "Factures";
+        return view('factures.update', compact("page_title"));
+    }
+
+    public function detailfacture()
+    {
+        $page_title = "Factures";
+        return view('factures.info', compact("page_title"));
     }
 
 }

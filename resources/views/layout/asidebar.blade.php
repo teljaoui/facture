@@ -1,6 +1,6 @@
 <div class="d-flex sidebar-header">
     <img src="" alt="" class="sidebar-logo">
-    <a href="#" class="sidebar-logo phone-hidden" >facture</a>
+    <a href="{{route("home")}}" class="sidebar-logo phone-hidden" >facture</a>
     <button class="toggle-btn" type="button">
         <i class="fa-solid fa-bars"></i>
     </button>

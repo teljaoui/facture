@@ -34,7 +34,7 @@
                             <input type="search" class="form-control" placeholder="Rechercher">
                         </div>
                     </form>
-                    <div class="d-flex gap-10">
+                    <div class="d-flex facture-phone  gap-10">
                         <div class="form-group">
                             <input type="text" id="daterange" class="form-control"
                                 placeholder="Sélectionner une période">
@@ -87,10 +87,10 @@
                                             <img src="{{ asset('assets/img/avatar.png') }}" alt="Avatar"
                                                 class="avatar me-3">
                                             <div>
-                                                <a href="{{ route('detailclient') }}">Mohamed Sadis</a>
+                                                <a href="{{ route('detailclient') }}">Mohamed Test</a>
                                                 <a href="{{route('detailfacture')}}"><span class="badge-info mx-2">#de874</span></a>
                                                 <br>
-                                                <span>mohamedsadis@gmail.com</span>
+                                                <span>mohamedtest@gmail.com</span>
                                             </div>
                                         </div>
                                     </td>
@@ -134,10 +134,10 @@
                                             <img src="{{ asset('assets/img/avatar.png') }}" alt="Avatar"
                                                 class="avatar me-3">
                                             <div>
-                                                <a href="{{ route('detailclient') }}">Mohamed Sadis</a>
+                                                <a href="{{ route('detailclient') }}">Mohamed Test</a>
                                                 <a href="{{route('detailfacture')}}"><span class="badge-info mx-2">#de874</span></a>
                                                 <br>
-                                                <span>mohamedsadis@gmail.com</span>
+                                                <span>mohamedtest@gmail.com</span>
                                             </div>
                                         </div>
                                     </td>
@@ -181,10 +181,10 @@
                                             <img src="{{ asset('assets/img/avatar.png') }}" alt="Avatar"
                                                 class="avatar me-3">
                                             <div>
-                                                <a href="{{ route('detailclient') }}">Mohamed Sadis</a>
+                                                <a href="{{ route('detailclient') }}">Mohamed Test</a>
                                                 <a href="{{route('detailfacture')}}"><span class="badge-info mx-2">#de874</span></a>
                                                 <br>
-                                                <span>mohamedsadis@gmail.com</span>
+                                                <span>mohamedtest@gmail.com</span>
                                             </div>
                                         </div>
                                     </td>

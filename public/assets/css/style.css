@@ -36,9 +36,10 @@ a {
     text-decoration: none !important;
 }
 
-li{
+li {
     list-style-type: none !important;
 }
+
 
 .button {
     font-weight: 400;
@@ -129,7 +130,8 @@ li{
     min-width: 70px;
 }
 
-.toggle-btn , .close-toggle {
+.toggle-btn,
+.close-toggle {
     background-color: transparent;
     cursor: pointer;
     display: flex;
@@ -138,7 +140,8 @@ li{
     padding: 1.5rem 0.5rem;
 }
 
-.toggle-btn i , .close-toggle i {
+.toggle-btn i,
+.close-toggle i {
     font-size: 1.2rem;
     color: var(--color-6c757d);
 }
@@ -247,7 +250,7 @@ header .header {
     background-color: var(--color-fff);
 }
 
-.header .page-title h5 {
+.header .page-title h5 , .sidebar-logo {
     font-size: 1.2rem;
     font-weight: 400;
     position: relative;
@@ -399,6 +402,17 @@ header .header {
     padding: .344rem .625rem;
     font-size: .75rem;
     border-radius: 5px;
+
+}
+
+.main .content span.badge-genie {
+    background-color: var(--color-e0e3ff);
+    color: var(--color-6571ff);
+    padding: 2px 8px;
+    font-size: .81rem;
+    font-weight: 500;
+    border-radius: 5px;
+
 }
 
 .main .content span.badge-info {
@@ -411,14 +425,7 @@ header .header {
     border-radius: 5px;
 }
 
-.main .content span.badge-genie {
-    background-color: var(--color-e0e3ff);
-    color: var(--color-6571ff);
-    padding: 2px 8px;
-    font-size: .81rem;
-    font-weight: 500;
-    border-radius: 5px;
-}
+
 
 .main .content .info a {
     color: var(--color-6571ff);
@@ -556,6 +563,8 @@ header .header {
     color: var(--color-212529);
 }
 
+
+
 /*content ends */
 
 /*Résponsive design*/
@@ -563,30 +572,70 @@ header .header {
 .toggle-btn-phone {
     display: none;
 }
+
 #toggle-btn-phone {
     display: none;
 }
 
-#closetoggle{
+#closetoggle {
+    display: none;
+}
+
+.facture-button {
     display: none;
 }
 
 @media (max-width:1024px) {
-    .phone-hidden{
+    .phone-hidden {
         display: none;
     }
+
     #sidebar {
         position: absolute;
         left: -100%;
     }
-    #toggle-btn-phone , #closetoggle {
+
+    #toggle-btn-phone,
+    #closetoggle {
         display: inline-block;
     }
 
-    .toggle-btn{
+    .toggle-btn {
         display: none;
     }
-    
+
+}
+
+
+@media (max-width:641px) {
+    .client-top {
+        display: flex !important;
+        flex-direction: column !important;
+        gap: 15px;
+    }
+
+    .facture-phone {
+        display: flex;
+        flex-direction: column;
+    }
+
+    .badge-red,
+    .badge-success,
+    .badge,
+    .badge-genie,
+    .badge-warning {
+        display: inline-block;
+    }
+}
+
+@media (max-width:450px) {
+    .header-right .button {
+        display: none;
+    }
+
+    .facture-button {
+        display: inline;
+    }
 }
 
 /*Résponsive design ends*/
