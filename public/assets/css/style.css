@@ -114,6 +114,58 @@ li {
     gap: 15px;
 }
 
+/*login page*/
+
+.form-login{
+    width: 40%;
+    margin-inline: auto;
+    margin-top: 10%;
+    padding: 50px;
+    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.176);
+    border-radius: 15px;
+}
+
+.form-login h5{
+    font-size: 18px;
+    text-align: center;
+    color: var(--color-343a40);
+}
+
+.form-login input[type = "submit"]{
+    width: 100%;
+    display: inline-block;
+    text-align: center;
+    align-items: center;
+}
+.form-login .form-group label {
+    margin-bottom: 8px;
+    font-size: 1rem;
+    color: var(--color-212529);
+}
+
+.form-login .form-control {
+    display: block;
+    width: 100%;
+    padding: .6rem .9rem;
+    font-size: .79rem;
+    color: var(--color-6c757d);
+    transition: 0.5s ease-in-out;
+}
+
+.form-login .form-control:focus,
+.form-login .form-select:focus {
+    border: 1px solid var(--color-6c757d);
+    box-shadow: none;
+    outline: none;
+}
+
+.form-login img{
+    width: 100px;
+    height: auto;
+}
+/*login page ends*/
+
+/*asidebar*/
 #sidebar {
     width: 265px;
     height: 100vh;

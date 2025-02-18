@@ -50,3 +50,5 @@ Route::prefix('/factures')->group(function(){
 Route::prefix('/admin')->group( function(){
     Route::get('/' , [AdminController::class , 'compte'])->name('compte');
 });
+
+Route::get('/login' , [AdminController::class , 'login'])->name('login');
