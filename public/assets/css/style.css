@@ -655,6 +655,10 @@ header .header {
     .toggle-btn {
         display: none;
     }
+    .form-login{
+        width: 80% !important;
+        margin-top: 20%;
+    }
 
 }
 
@@ -678,6 +682,10 @@ header .header {
     .badge-warning {
         display: inline-block;
     }
+    .form-login{
+        width: 90% !important;
+        margin-top: 30%;
+    }
 }
 
 @media (max-width:450px) {
@@ -688,6 +696,7 @@ header .header {
     .facture-button {
         display: inline;
     }
+
 }
 
 /*Résponsive design ends*/
